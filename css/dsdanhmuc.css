@@ -1,0 +1,60 @@
+div#nz-div {
+    border-bottom: 2px solid black;
+    display: block;
+    margin: 3% 9%;
+    margin-top: 95px;
+}
+
+#nz-div h3.tde {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nz-div h3.tde :after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 0px solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}
+
+#nz-div h3.tde span {
+    background: black;
+    padding: 10px 20px 8px 20px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.sub-cat {
+    display: inline-block;
+    margin: 0;
+    line-height: 45px;
+    margin-left: 100px;
+    float: right;
+}
+
+.danhmuc {
+    margin: 0% 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .danhmuc {
+        margin: 0% 5%;
+    }
+}

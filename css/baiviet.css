@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.baiviet {
+    display: flex;
+    align-items: center;
+    margin: 0% 7%;
+}
+
+.baiviet .container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.baiviet .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.baiviet .card {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.baiviet .card .image-box {
+    height: 300px;
+}
+
+.baiviet .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.baiviet .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+.baiviet .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.baiviet .profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.baiviet .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.baiviet .swiper-navBtn {
+    color: #000;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #fff;
+    border-radius: 50%;
+}
+
+.baiviet .swiper-navBtn::before,
+.baiviet .swiper-navBtn::after {
+    font-size: 24px;
+}
+
+.baiviet .swiper-pagination-bullet {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .baiviet .swiper-navBtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .baiviet .swiper-navBtn {
+        display: none;
+    }
+
+    .baiviet {
+        margin: 1% 2%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .baiviet .swiper-navBtn {
+        display: none;
+    }
+
+    .baiviet {
+        margin-top: -5%;
+    }
+}
+
+div#nz-div {
+    border-bottom: 2px solid #CD5C5C;
+    display: block;
+    margin: 0% 9%;
+}
+
+#nz-div h3.tde {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nz-div h3.tde :after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 20px solid #CD5C5C;
+    border-bottom: 0px solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}
+
+#nz-div h3.tde span {
+    background: #CD5C5C;
+    padding: 10px 20px 8px 20px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}

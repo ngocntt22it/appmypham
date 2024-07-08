@@ -1,0 +1,109 @@
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: #FFC1C1;
+    /* Màu nền của phần nội dung */
+    border-radius: 8px;
+    /* Bo góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+    margin-top: 20px;
+}
+
+.container1 h2 {
+    color: #333;
+    /* Màu chữ */
+    text-align: center;
+    text-transform: uppercase;
+    /* Chuyển đổi chữ thành chữ in hoa */
+}
+
+.circle-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: 2% 9%;
+    position: relative;
+}
+
+.circle-wrapper {
+    width: 115px;
+    height: 180px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease;
+}
+
+.circle-wrapper:hover {
+    color: #F08080;
+}
+
+.circle {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.circle:hover .overlay {
+    opacity: 1;
+}
+
+.circle h3 {
+    margin: 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.arrows-container {
+    position: relative;
+    /* margin-top: 10px; */
+}
+
+.arrow-frame {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FA8072;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-frame:hover {
+    background-color: #FF4040;
+}
+
+.prev-btn {
+    left: 8%;
+    top: -150px;
+}
+
+.next-btn {
+    right: 7.5%;
+    top: -150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

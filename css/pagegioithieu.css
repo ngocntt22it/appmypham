@@ -1,0 +1,334 @@
+body {
+    background: #FCDAD5;
+}
+
+/* gioithieu */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.gioithieu ::selection {
+    color: #fff;
+    background: #ff7979;
+}
+
+.gioithieu .wrapper {
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.gioithieu .wrapper .center-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.gioithieu .wrapper .row {
+    display: flex;
+}
+
+.gioithieu .wrapper .row-1 {
+    justify-content: flex-start;
+}
+
+.gioithieu .wrapper .row-2 {
+    justify-content: flex-end;
+}
+
+.gioithieu .wrapper .row section {
+    background: #fff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.gioithieu .wrapper .row section::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.gioithieu .row-1 section::before {
+    right: -7px;
+}
+
+.gioithieu .row-2 section::before {
+    left: -7px;
+}
+
+.gioithieu .row section .icon,
+.gioithieu .center-line .scroll-icon {
+    position: absolute;
+    background: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ff7979;
+    font-size: 16px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.gioithieu .center-line .scroll-icon {
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.gioithieu .row-1 section .icon {
+    top: 15px;
+    right: -60px;
+}
+
+.gioithieu .row-2 section .icon {
+    top: 15px;
+    left: -60px;
+}
+
+.gioithieu .row section .details,
+.gioithieu .row section .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gioithieu .row section .details .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gioithieu .row section p {
+    margin: 10px 0 17px 0;
+}
+
+.gioithieu .row section .bottom a {
+    text-decoration: none;
+    background: #ff7979;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    /* font-size: 17px; */
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.gioithieu .row section .bottom a:hover {
+    transform: scale(0.97);
+}
+
+@media(max-width: 790px) {
+    .gioithieu .wrapper .center-line {
+        left: 40px;
+    }
+
+    .gioithieu .wrapper .row {
+        margin: 30px 0 3px 60px;
+    }
+
+    .gioithieu .wrapper .row section {
+        width: 100%;
+    }
+
+    .gioithieu .row-1 section::before {
+        left: -7px;
+    }
+
+    .gioithieu .row-1 section .icon {
+        left: -60px;
+    }
+
+    .header .wrapper {
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media(max-width: 440px) {
+
+    .gioithieu .wrapper .center-line,
+    .gioithieu .row section::before,
+    .gioithieu .row section .icon {
+        display: none;
+    }
+
+    .gioithieu .wrapper .row {
+        margin: 10px 0;
+        margin: 8%
+    }
+
+    .gioithieu .details .i,
+    .gioithieu .row section .bottom i {
+        display: none;
+    }
+
+}
+
+
+div#nz-div {
+    border-bottom: 2px solid #CD5C5C;
+    display: block;
+    margin: 3% 9%;
+}
+
+#nz-div h3.tde {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nz-div h3.tde :after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 20px solid #CD5C5C;
+    border-bottom: 0px solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}
+
+#nz-div h3.tde span {
+    background: #CD5C5C;
+    padding: 10px 20px 8px 20px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.about-us {
+    height: 450px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.about-us .pic {
+    height: auto;
+    width: 302px;
+}
+
+.about-us .about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-us .text {
+    width: 540px;
+}
+
+.about-us .text h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-us .text h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about-us span {
+    color: #4070f4;
+}
+
+.about-us .text p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.about-us .data {
+    margin-top: 30px;
+}
+
+.about-us .hire {
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.about-us .hire:hover {
+    background: #000;
+    border: 1px solid #4070f4;
+}
+
+@media(max-width: 1038px) {
+    .about-us {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-us .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us .pic {
+        margin-bottom: 20px;
+    }
+
+    .about-us .text {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .about-us {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-us .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us .pic {
+        margin-bottom: 20px;
+    }
+
+    .about-us .text {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 350px) {
+    .about-us {
+        height: auto;
+        width: 100%;
+    }
+
+    .about img {
+        display: none;
+    }
+}
